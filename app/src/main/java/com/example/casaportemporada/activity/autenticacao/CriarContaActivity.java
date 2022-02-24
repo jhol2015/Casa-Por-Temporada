@@ -1,4 +1,4 @@
-package com.example.casaportemporada.activity;
+package com.example.casaportemporada.activity.autenticacao;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,12 +6,11 @@ import android.os.Bundle;
 
 import com.example.casaportemporada.R;
 
-public class MainActivity extends AppCompatActivity {
+public class CriarContaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_criar_conta);
     }
-
 }
