@@ -6,5 +6,13 @@
     <string name="esqueceu_a_senha">Esqueceu a senha?</string>
     <string name="entrar">Entrar</string>
     <string name="login_btn">Login</string>
+    <string name="titulo">titulo</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="voltar">Voltar</string>
+    <string name="insira_seu_e_mail_abaixo_para_receber_um_e_mail_para_recuperar_sua_conta">Insira seu e-mail abaixo para receber um e-mail para recuperar sua conta</string>
+    <string name="recuperar_senha">Recuperar Senha</string>
+    <string name="recuperar_conta">Recuperar Conta</string>
     <string name="crie_sua_conta">Crie sua conta</string>
 </resources>

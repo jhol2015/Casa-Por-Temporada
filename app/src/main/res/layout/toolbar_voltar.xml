@@ -8,7 +8,7 @@
     android:background="@color/blue_primary">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/ib_voltar"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
@@ -17,13 +17,14 @@
         android:src="@drawable/ic_voltar_branco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/voltar" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/crie_sua_conta"
+        android:text="@string/titulo"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
