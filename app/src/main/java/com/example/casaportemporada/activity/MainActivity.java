@@ -1,8 +1,9 @@
 package com.example.casaportemporada.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.casaportemporada.R;
 
@@ -14,4 +15,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void validaDados(View view) {
+    }
 }
