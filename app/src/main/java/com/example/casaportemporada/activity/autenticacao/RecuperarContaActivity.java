@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.casaportemporada.R;
 import com.example.casaportemporada.helper.FirebaseHelper;
 
+import java.util.Objects;
+
 public class RecuperarContaActivity extends AppCompatActivity {
 
     private EditText edit_email;
@@ -44,9 +46,10 @@ public class RecuperarContaActivity extends AppCompatActivity {
             if(task.isSuccessful()){
                 Toast.makeText(this, "E-mail enviado com sucesso!", Toast.LENGTH_SHORT).show();
             }else{
-                String erro = task.getException().getMessage();
+                String erro = Objects.requireNonNull(task.getException()).getMessage();
                 Toast.makeText(this, erro, Toast.LENGTH_SHORT).show();
             }
+            progressBar.setVisibility(View.GONE);
         });
     }
 

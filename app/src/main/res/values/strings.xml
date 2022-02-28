@@ -15,4 +15,13 @@
     <string name="recuperar_senha">Recuperar Senha</string>
     <string name="recuperar_conta">Recuperar Conta</string>
     <string name="crie_sua_conta">Crie sua conta</string>
+    <string name="t_tulo">Título</string>
+    <string name="descri_o">Descrição</string>
+    <string name="ex_3">Ex 3</string>
+    <string name="quartos">Quartos</string>
+    <string name="garagem">Garagem</string>
+    <string name="ex_1">Ex 1</string>
+    <string name="banheiros">Banheiros</string>
+    <string name="ex_2">Ex 2</string>
+    <string name="dispon_vel">Disponível</string>
 </resources>

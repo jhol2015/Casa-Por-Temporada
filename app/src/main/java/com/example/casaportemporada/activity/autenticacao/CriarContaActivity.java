@@ -90,7 +90,7 @@ public class CriarContaActivity extends AppCompatActivity {
                 usuario.setId(idUser);
                 usuario.salvar();//so salva usuario se tiver sucesso
 
-                //encerra ela de cadastro
+                //encerra tela de cadastro
                 finish();
 
                 //abre proxima tela
