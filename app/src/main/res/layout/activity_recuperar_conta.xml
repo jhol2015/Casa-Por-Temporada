@@ -26,8 +26,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include2" />
 
-    <TextView
-        android:id="@+id/text_email"
+    <EditText
+        android:id="@+id/edit_emailRec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_edit"
@@ -39,15 +39,29 @@
         app:layout_constraintTop_toBottomOf="@+id/text_head"/>
 
     <android.widget.Button
+        android:id="@+id/btn_recuperar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_btn"
         android:textAllCaps="false"
         android:text="@string/recuperar_senha"
-        android:layout_margin="32dp"
+        android:layout_margin="24dp"
+        android:onClick="validaDados"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_emailRec" />
+
+    <ProgressBar
+        android:id="@+id/proressbar_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recuperar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
