@@ -27,17 +27,22 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_imagem"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="24dp"
                 android:backgroundTint="@color/blue_primary"
-                app:cardCornerRadius="5dp">
+                android:onClick="verificaPermissaoGaleria"
+                app:cardCornerRadius="5dp"
+                tools:ignore="SpeakableTextPresentCheck">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/img_anuncio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/ic_photo" />
             </androidx.cardview.widget.CardView>
 
@@ -48,6 +53,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="24dp"
+                android:inputType="textCapWords|textCapSentences"
                 android:background="@drawable/bg_edit"
                 android:hint="@string/t_tulo"
                 android:padding="16dp" />
@@ -67,6 +73,7 @@
                     android:layout_marginStart="8dp"
                     android:backgroundTint="@android:color/white"
                     android:hint="@string/descri_o"
+                    android:inputType="textCapWords|textCapSentences"
                     android:minHeight="48dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -100,6 +107,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
+                        android:inputType="number"
                         android:background="@drawable/bg_edit"
                         android:hint="@string/ex_3"
                         android:padding="16dp" />
@@ -124,6 +132,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
+                        android:inputType="number"
                         android:background="@drawable/bg_edit"
                         android:hint="@string/ex_2"
                         android:padding="16dp" />
@@ -147,6 +156,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
+                        android:inputType="number"
                         android:background="@drawable/bg_edit"
                         android:hint="@string/ex_1"
                         android:padding="16dp" />
@@ -163,6 +173,16 @@
                 android:checked="true"
                 android:text="@string/dispon_vel"
                 android:textColor="@color/blue_primary" />
+
+            <ProgressBar
+                android:id="@+id/pb_anuncio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateTint="@color/blue_primary"/>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

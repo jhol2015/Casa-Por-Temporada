@@ -3,18 +3,27 @@ package com.example.casaportemporada.model;
 import com.example.casaportemporada.helper.FirebaseHelper;
 import com.google.firebase.database.DatabaseReference;
 
-public class Produto {
+public class Anuncio {
     private String id;
     private String titulo;
     private String descricao;
     private String quarto;
     private String banheiro;
     private String garagem;
+    private String urlImagem;
     private boolean status;
 
-    public Produto() {
+    public Anuncio() {
         DatabaseReference reference = FirebaseHelper.getDatabaseReference();
         this.setId(reference.push().getKey());//toda vez que instaciar um produto novo recebe um id
+    }
+
+    public void salvar(){
+        DatabaseReference reference = FirebaseHelper.getDatabaseReference()
+                .child("anuncios")
+                .child(FirebaseHelper.getIdFirebase())
+                .child(this.getId());
+        reference.setValue(this);
     }
 
     public String getId() {
@@ -67,6 +76,14 @@ public class Produto {
 
     public boolean isStatus() {
         return status;
+    }
+
+    public String getUrlImagem() {
+        return urlImagem;
+    }
+
+    public void setUrlImagem(String urlImagem) {
+        this.urlImagem = urlImagem;
     }
 
     public void setStatus(boolean status) {

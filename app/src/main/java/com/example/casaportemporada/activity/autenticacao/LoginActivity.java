@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.casaportemporada.R;
-import com.example.casaportemporada.activity.MainActivity;
+import com.example.casaportemporada.activity.FormAnuncioActivity;
 import com.example.casaportemporada.helper.FirebaseHelper;
 
 import java.util.Objects;
@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         ).addOnCompleteListener(task -> {
             if(task.isSuccessful()){
                 finish();
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, FormAnuncioActivity.class));
             }else{
                 String error = Objects.requireNonNull(task.getException()).getMessage();
                 Toast.makeText(this, error, Toast.LENGTH_SHORT).show();
