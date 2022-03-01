@@ -42,14 +42,15 @@
             </androidx.cardview.widget.CardView>
 
             <EditText
+                android:id="@+id/edit_titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="24dp"
-                android:hint="@string/t_tulo"
                 android:background="@drawable/bg_edit"
-                android:padding="16dp"/>
+                android:hint="@string/t_tulo"
+                android:padding="16dp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -60,11 +61,13 @@
                 android:layout_height="100dp">
 
                 <EditText
+                    android:id="@+id/edit_descricao"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/descri_o"
-                    android:backgroundTint="@android:color/white"
                     android:layout_marginStart="8dp"
+                    android:backgroundTint="@android:color/white"
+                    android:hint="@string/descri_o"
+                    android:minHeight="48dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -93,12 +96,13 @@
                         android:textColor="@color/blue_primary"/>
 
                     <EditText
+                        android:id="@+id/edit_quarto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/ex_3"
                         android:layout_marginTop="4dp"
                         android:background="@drawable/bg_edit"
-                        android:padding="16dp"/>
+                        android:hint="@string/ex_3"
+                        android:padding="16dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -116,12 +120,13 @@
                         android:textColor="@color/blue_primary"/>
 
                     <EditText
+                        android:id="@+id/edit_banheiro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/ex_2"
-                        android:background="@drawable/bg_edit"
                         android:layout_marginTop="4dp"
-                        android:padding="16dp"/>
+                        android:background="@drawable/bg_edit"
+                        android:hint="@string/ex_2"
+                        android:padding="16dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -138,24 +143,26 @@
                         android:textColor="@color/blue_primary"/>
 
                     <EditText
+                        android:id="@+id/edit_garagem"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:hint="@string/ex_1"
                         android:background="@drawable/bg_edit"
-                        android:padding="16dp"/>
+                        android:hint="@string/ex_1"
+                        android:padding="16dp" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <CheckBox
+                android:id="@+id/cb_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/blue_primary"
                 android:layout_marginStart="24dp"
-                android:textColor="@color/blue_primary"
+                android:buttonTint="@color/blue_primary"
+                android:checked="true"
                 android:text="@string/dispon_vel"
-                android:checked="true"/>
+                android:textColor="@color/blue_primary" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

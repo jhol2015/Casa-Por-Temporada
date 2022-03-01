@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CasaPorTemporada">
         <activity
-            android:name=".activity.FormAnuncioActivity"
+            android:name=".activity.autenticacao.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".activity.autenticacao.RecuperarContaActivity"
@@ -22,7 +22,7 @@
             android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.autenticacao.LoginActivity"
+            android:name=".activity.FormAnuncioActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
