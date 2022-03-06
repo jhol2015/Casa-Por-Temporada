@@ -24,4 +24,9 @@
     <string name="banheiros">Banheiros</string>
     <string name="ex_2">Ex 2</string>
     <string name="dispon_vel">Disponível</string>
+    <string name="casa_por_temporada">Casa Por Temporada</string>
+    <string name="menu">Menu</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="meus_an_ncios">Meus Anúncios</string>
+    <string name="minha_conta">Minha Conta</string>
 </resources>

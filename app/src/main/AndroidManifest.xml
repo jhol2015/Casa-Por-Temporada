@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.casaportemporada">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CasaPorTemporada">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.MinhaContaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MeusAnunciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FiltrarAnunciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.autenticacao.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".activity.autenticacao.RecuperarContaActivity"
@@ -24,7 +33,7 @@
             android:name=".activity.FormAnuncioActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.autenticacao.LoginActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
